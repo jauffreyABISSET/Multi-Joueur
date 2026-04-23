@@ -1,0 +1,91 @@
+{
+    "projects": {
+        "06584FCA-4EE0-4ACC-0934-1E6578C73A32": {
+          "config-debug": {
+            "additionalDependencies": [],
+            "additionalIncludeDirectories": [
+              "$(SolutionDir)../lib/cpulib/include/cpu-core/",
+              "$(SolutionDir)../lib/cpulib/include/cpu-engine/",
+              "$(SolutionDir)../lib/cpulib/include/cpu-render/"
+            ],
+            "additionalLibraryDirectories": [],
+            "preprocessorDefinitions": []
+          },
+            "config-release": {
+              "additionalDependencies": [],
+              "additionalIncludeDirectories": [
+                "$(SolutionDir)../lib/cpulib/include/cpu-core/",
+                "$(SolutionDir)../lib/cpulib/include/cpu-engine/",
+                "$(SolutionDir)../lib/cpulib/include/cpu-render/"
+              ],
+              "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [],
+            "dependents": [
+                "08F244ED-6A63-3240-24A1-578229031D86",
+                "09510685-5210-582C-3514-1455099851EB"
+            ],
+            "name": "lib",
+            "property-lib": true,
+            "property-pch": true,
+            "property-vcpkg": false,
+            "property-window": false
+        },
+        "08F244ED-6A63-3240-24A1-578229031D86": {
+            "config-debug": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [
+                "06584FCA-4EE0-4ACC-0934-1E6578C73A32"
+            ],
+            "dependents": [],
+            "name": "Server",
+            "property-lib": false,
+            "property-pch": true,
+            "property-vcpkg": false,
+            "property-window": false
+        },
+        "09510685-5210-582C-3514-1455099851EB": {
+            "config-debug": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [
+                "06584FCA-4EE0-4ACC-0934-1E6578C73A32"
+            ],
+            "dependents": [],
+            "name": "Client",
+            "property-lib": false,
+            "property-pch": true,
+            "property-vcpkg": false,
+            "property-window": true
+        }
+    },
+    "projects_name_to_guid": {
+        "Client": "09510685-5210-582C-3514-1455099851EB",
+        "Server": "08F244ED-6A63-3240-24A1-578229031D86",
+        "lib": "06584FCA-4EE0-4ACC-0934-1E6578C73A32"
+    },
+    "solution_guid": "02B511CB-1F07-258F-2E2E-0AD76FBF7513",
+    "solution_name": "multiProj",
+    "startup_project": "Server",
+    "version": "2.0"
+}
